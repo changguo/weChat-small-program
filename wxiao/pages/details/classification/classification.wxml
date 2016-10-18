@@ -1,0 +1,32 @@
+<view class="container">
+    <view class="search-pannel">
+        <view class="search-inner">
+        <!-- <image src="{{search-medichine}}"></image> -->
+            <input  type="text" class="search" placeholder="搜索" focus="{{focus}}" placeholder-style="text-align:center"/>
+        </view>
+    </view>
+    <!-- 内容 -->
+     <view class="search-content">
+        <!-- left aside -->
+        <view class="search-left-aside">
+            <block wx:for="{{searchList}}">
+                <text class="type-nav  {{curNav==item.id ? 'selected':''}}" bindtap="selectNav" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</text>
+            </block>
+        </view>
+        <!-- right aside -->
+          <scroll-view scroll-y="true" style="height:31.2rem ">
+        <view class="search-right-aside">
+          
+                       <block wx:for="{{searchGoods[curIndex]}}">
+                        <view class="goods-detail">
+                           <view class="sigle-goods">
+                               <image src="{{item.url}}"></image>
+                               <text>{{item.name}}</text>
+                          </view>
+                        </view>
+                     </block>
+            
+        </view>
+         </scroll-view>
+     </view>
+</view>

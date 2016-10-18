@@ -1,0 +1,55 @@
+.seek-container{
+	width: 100%;
+	height: 100%;
+}
+.seek-main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: relative;
+}
+.seek-main-left{
+	width: 120px;
+}
+
+.seek-main .active{
+	border-right: none;
+	background: #fff;
+}
+
+.seek-main-title{
+	height: 160rpx;
+	line-height: 160rpx;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+	align-items: center;
+	position: relative;
+	border: 1px solid #d7d7d7;
+	background: #f7f7f7;
+}
+.seek-main-title image{
+	width: 90rpx;
+	height: 90rpx;
+}
+.seek-main-title .seek-left-triangle{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid #25b99f;
+	border-left: 10px solid transparent;
+}
+.seek-main-right{
+	position: absolute;
+	width: 100%;
+	left: 140px;
+	top: 0;
+}
+.seek-main-right text{
+	border-bottom: 1px solid #e7e7e7;
+	display: block;
+	height: 120rpx;
+	line-height: 120rpx;
+}

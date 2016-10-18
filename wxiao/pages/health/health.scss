@@ -1,0 +1,49 @@
+.health-container{
+	width: 100%;
+	height: 100%;
+	background: #f3f3f1;
+	
+	.health-pack{
+		background: #fff;
+		.health-pack-title{
+			margin: 10px;
+			border-left: 5px solid #1abb99;
+			padding-left: 10px;
+		}
+		.health-pack-image{
+			image{			
+				width: 100%;
+			}
+		}
+		.health-pack-praise{
+			margin: -20px auto 0;
+			width: 80rpx;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			image{
+				width: 57rpx;
+				height: 64rpx;
+			}
+			text{
+				display: block;
+				text-align: center;
+			}
+		}
+		.health-pack-list{
+			white-space: nowrap;
+			display: flex;
+			view{
+				display: inline-block;
+				padding: 10rpx 30rpx;
+			}
+			image{
+				width: 100rpx;
+				height: 100rpx;
+			}
+		}	
+	}
+}
+
+

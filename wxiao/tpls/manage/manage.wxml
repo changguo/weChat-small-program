@@ -1,0 +1,33 @@
+<template name="manage">
+	<view class="index-main">
+			<view class="index-main-left">
+				<view class="index-ml-image"><image src="{{precept.src}}" mode="aspectFit" /></view>
+				<text>{{precept.title}}</text>
+				<p>{{precept.describe}}</p>
+			</view>
+			<view class="index-main-right">
+			<navigator url="/pages/seek/seek">
+				<view class="index-mr-top">
+					<ul class="index-mr-ul">
+						<li>{{symptom.title}}</li>
+						<li>{{symptom.describe}}</li>
+					</ul>
+					<view class="index-mr-image">
+						<image src="{{symptom.src}}" mode="aspectFit" />
+					</view>
+				</view>
+			</navigator>
+				<view class="index-mr-bot">
+					<view>
+						<image src="{{record.src}}" mode="aspectFit" />
+						<text>{{record.title}}</text>
+					</view>
+					<view class="index-mrbt-even">
+						<image src="{{inquiry.src}}" mode="aspectFit" />
+						<text>{{inquiry.title}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+</template>
+

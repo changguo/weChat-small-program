@@ -1,0 +1,77 @@
+.index-main {
+  width: 100%;
+  border-top: 1px solid #d3d4cf;
+  border-bottom: 1px solid #d3d4cf;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  background: #fff; }
+  .index-main .index-main-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 40px 0 40px;
+    border-right: 1px solid #d3d4cf; }
+    .index-main .index-main-left .index-ml-image {
+      padding: 0 10px 0; }
+      .index-main .index-main-left .index-ml-image image {
+        width: 100%;
+        height: 90px; }
+    .index-main .index-main-left p {
+      font-size: 12px; }
+  .index-main .index-main-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column; }
+    .index-main .index-main-right .index-mr-top {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      box-sizing: border-box;
+      border-bottom: 1px solid #d3d4cf; }
+      .index-main .index-main-right .index-mr-top .index-mr-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex: 1;
+        font-size: 14px; }
+        .index-main .index-main-right .index-mr-top .index-mr-ul li {
+          display: block;
+          text-align: center; }
+      .index-main .index-main-right .index-mr-top .index-mr-image {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        box-sizing: border-box; }
+        .index-main .index-main-right .index-mr-top .index-mr-image image {
+          width: 70%;
+          height: 100px; }
+    .index-main .index-main-right .index-mr-bot {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center; }
+      .index-main .index-main-right .index-mr-bot view {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        border-right: 1px solid #d3d4cf; }
+        .index-main .index-main-right .index-mr-bot view image {
+          width: 50%;
+          height: 100px;
+          margin: 0 auto; }
+        .index-main .index-main-right .index-mr-bot view text {
+          line-height: 30px; }
+      .index-main .index-main-right .index-mr-bot .index-mrbt-even {
+        border: none; }

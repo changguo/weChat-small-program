@@ -1,0 +1,105 @@
+[
+  {
+    "src": "/images/jibing33.png",
+    "title": "日常多发病症",
+    "up": "/images/ic_collapse_small_holo_light.png",
+    "down": "/images/ic_expand_small_holo_light.png",
+    "upIsDowm": "false",
+    "list": [
+      {
+        "src": "/images/jibing33.png",
+        "title": "感冒"
+      },{
+        "src": "/images/jibing34.png",
+        "title": "失眠"
+      },{
+        "src": "/images/jibing35.png",
+        "title": "便秘"
+      },{
+        "src": "/images/jibing30.png",
+        "title": "咳嗽"
+      },{
+        "src": "/images/jibing31.png",
+        "title": "肠胃不适"
+      }
+    ]
+  },{
+    "src": "/images/jibing31.png",
+    "title": "女性常见病症",
+    "up": "/images/ic_collapse_small_holo_light.png",
+    "down": "/images/ic_expand_small_holo_light.png",
+    "upIsDowm": "true",
+    "list": [
+      {
+        "src": "/images/jibing33.png",
+        "title": "月经不调"
+      },{
+        "src": "/images/jibing34.png",
+        "title": "阴道炎"
+      },{
+        "src": "/images/jibing35.png",
+        "title": "更年期综合症"
+      },{
+        "src": "/images/jibing30.png",
+        "title": "痛经"
+      },{
+        "src": "/images/jibing31.png",
+        "title": "黄褐斑"
+      }
+    ]
+  },{
+    "src": "/images/jibing31.png",
+    "title": "男性常见疾病",
+    "up": "/images/ic_collapse_small_holo_light.png",
+    "down": "/images/ic_expand_small_holo_light.png",
+    "upIsDowm": "true",
+    "list": [
+      {
+        "src": "/images/jibing33.png",
+        "title": "补肾补精"
+      },{
+        "src": "/images/jibing34.png",
+        "title": "前列腺炎"
+      },{
+        "src": "/images/jibing35.png",
+        "title": "脱发"
+      }
+    ]
+  },{
+    "src": "/images/jibing31.png",
+    "title": "儿童常见疾病",
+    "up": "/images/ic_collapse_small_holo_light.png",
+    "down": "/images/ic_expand_small_holo_light.png",
+    "upIsDowm": "true",
+    "list": [
+      {
+        "src": "/images/jibing33.png",
+        "title": "儿童感冒"
+      },{
+        "src": "/images/jibing34.png",
+        "title": "儿童厌食"
+      },{
+        "src": "/images/jibing35.png",
+        "title": "儿童积食"
+      },{
+        "src": "/images/jibing33.png",
+        "title": "儿童感冒"
+      },{
+        "src": "/images/jibing34.png",
+        "title": "儿童厌食"
+      },{
+        "src": "/images/jibing35.png",
+        "title": "儿童积食"
+      },{
+        "src": "/images/jibing33.png",
+        "title": "儿童感冒"
+      },{
+        "src": "/images/jibing34.png",
+        "title": "儿童厌食"
+      },{
+        "src": "/images/jibing35.png",
+        "title": "儿童积食"
+      }
+    ]
+  }
+]

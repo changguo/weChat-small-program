@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<template name="bannertap">
+	<view class="index-swiper">
+		<swiper indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="swiperChange">
+			<block wx:for="{{indexImgUrls}}">
+				<swiper-item>
+					<image src="{{item}}" class="slide-image" mode="scaleToFill" />
+				</swiper-item>
+			</block>
+		</swiper>		
+		<ul class="index-swiper-tab" >
+			<block wx:for="{{indexImgUrls}}">
+				<li class="{{current == index ? 'active' : ''}}" data-index="{{index}}" catchtap="swiperCurrent"></li>
+			</block>
+		</ul>
+	</view>
+</template>

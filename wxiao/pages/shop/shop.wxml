@@ -1,0 +1,99 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true">
+<view class="container">
+<!-- <scroll-view wx:if="{{loadingHidden}}" style="height:580px" scroll-y="true" upper-threshold="0" lower-threshold="150"> -->
+    <!-- 轮播图 -->
+    <import src="/tpls/shop-banner/shopbanner.wxml"/>
+    <template is="shopbanner" data="{{imgUrls,...shopbanner}}"></template>
+    <!-- 导航 -->
+     <view class="nav-block">
+        <block class="list-item " wx:for="{{navList}}">
+            <navigator url="../details/{{item.jump}}/{{item.jump}}" hover-class="navigator-hover" class="nav-inner">
+                <view class="column-icon">
+                <image class="navicon" src="{{item.url}}"></image>
+                <text>{{item.name}}</text>
+                </view>
+            </navigator>
+        </block>
+     </view>
+     <!--保健品 -->
+    <view class="healthproduct">
+        <!-- 左边块 -->
+        <view class="h-left">
+            <image src="{{hUrl}}"></image>
+        </view>
+        <!-- 右边块 -->
+        <view class="h-right">
+            <block class="healthList" wx:for="{{healthList}}">
+                 <li class="wrap-hFont {{index%2==0  ? 'active':''}} {{index==4||index==5 ? 'no-border':''}}">
+                 <text class="hFont">{{item.name}}</text>
+                 </li>
+            </block>
+        </view>
+    </view>
+        <!-- 保健品2 -->
+  <view class="healthproduct2"> 
+        <!-- 左边块 -->
+          <view class="h2-left">
+             <ul>
+               <li class="h2-left-img">
+                 <image src="{{healthList2.url}}"></image>
+                  <span>
+                   <text class="h2-name">{{healthList2.name}}</text>
+                   <text class="h2-desc">{{healthList2.desc}}</text>
+                  </span>
+               </li>
+               <li class="h2-left-img bottom-product">
+                 <image src="{{healthList3.url}}"></image>
+                  <span>
+                   <text class="h2-name">{{healthList3.name}}</text>
+                   <text class="h2-desc">{{healthList3.desc}}</text>
+                  </span>
+               </li>
+               <li></li>
+             </ul>
+         </view>
+        <!-- 右边块 -->
+         <view class="h2-right">
+          <ul>
+            <li>
+                 <text class="h2-name">{{healthList4.name}}</text>
+                 <text class="h2-desc">{{healthList4.desc}}</text>
+                 <image src="{{healthList4.url}}"></image>
+            </li>
+          </ul>
+         </view>
+   </view>
+   <!-- 精选 -->
+    <view class="choice">
+      <view class="choice-title"><text>精选</text></view>
+      <!-- 精选内容 -->
+      
+      <view class="list-loading">
+      <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+     </view>
+
+        <view class="choice-content">
+            <ul>
+              <navigator hover-class="navigator-hover"  class="navigator-to" url="../details/productdetail/productdetail?id={{item.product.id}}" wx:for="{{shopList}}"  wx:for-item="item">
+             <li>
+                <span>
+                <image class="product-detail-img" src="{{item.product.danPinImg}}" mode="aspectFit"></image>
+                <text class="proList-title">{{item.product.name}}</text>
+                <text class="proList-price">{{item.product.showPayPrice}}</text>
+                 <span>
+                <image class="look" src="{{item.product.love}}" mode="aspectFill"></image>
+                <text class="proList-command">{{item.product.collectNum}}</text>
+                </span>
+                </span>
+              </li>
+              </navigator>
+            </ul>
+        </view>
+        
+       <!-- <view hidden="{{loadmoreHidden}}">
+          <button plain="true" loading="true">努力加载中...</button>
+        </view>  -->
+    </view>
+</view>
+    </scroll-view>

@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/**index.wxss**/
+
+
+.container {
+  background: #F3F3F3;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; }
+
+.my-swiper {
+  width: 100%;
+  height: 180px; }
+
+.slide-image {
+  width: 100%;
+  height: 200px;
+  border: 0; }
+
+.nav-block {
+  display: flex;
+  background: #fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 12px;
+  margin-bottom: 10px; }
+
+.list-item {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.nav-inner {
+  width: 25%;
+  padding-top: 10px;
+  }
+
+  .column-icon{
+    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  }
+
+.nav-inner image {
+  width: 100rpx;
+  height: 100rpx; }
+
+.nav-inner text {
+  padding-top: 14px; }
+
+@media screen and (max-width: 321px) {
+  .nav-inner text {
+    font-size: 14px; } }
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .nav-inner text {
+    font-size: 15px; } }
+
+@media screen and (min-width: 400px) {
+  .nav-inner text {
+    font-size: 16px; } }
+
+.healthproduct {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: row; }
+
+.h-left {
+  width: 50%; }
+
+.h-left image {
+  width: 100%;
+  height: 360rpx; }
+
+.h-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 14px 15px 24px; }
+
+.wrap-hFont {
+  text-align: center;
+  width: 49%;
+  /*border-right: 1px solid #ccc;*/
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.active {
+  border-right: 1px solid #ccc; }
+
+.no-border {
+  border-bottom: none; }
+
+/*.none{
+    
+}*/
+.wrap-hFont:nth-child(odd) {
+  border-right: 1px solid #ccc; }
+
+@media screen and (max-width: 321px) {
+  .hFont {
+    font-size: 13px;
+    color: #656565; } }
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .hFont {
+    font-size: 14px;
+    color: #656565; } }
+
+@media screen and (min-width: 400px) {
+  .hFont {
+    font-size: 15px;
+    color: #656565; } }
+
+.healthproduct2 {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px; }
+
+.h2-left {
+  width: 60%; }
+
+.h2-left ul {
+  display: flex;
+  flex-direction: column; }
+
+.h2-left ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.h2-left ul li span {
+  display: block;
+  display: flex;
+  flex-direction: column; }
+
+.h2-left-img {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc; }
+
+.bottom-product {
+  border-bottom: none; }
+
+.h2-left-img image {
+  width: 45%;
+  height: 120px; }
+
+.h2-name {
+  margin-bottom: 5px; }
+
+@media screen and (max-width: 321px) {
+  .h2-name {
+    font-size: 15px;
+    color: #222; } }
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .h2-name {
+    font-size: 16px;
+    color: #222; } }
+
+@media screen and (min-width: 400px) {
+  .h2-name {
+    font-size: 17px;
+    color: #222; } }
+
+@media screen and (max-width: 321px) {
+  .h2-desc {
+    font-size: 13px;
+    color: #666; } }
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .h2-desc {
+    font-size: 14px;
+    color: #666; } }
+
+@media screen and (min-width: 400px) {
+  .h2-desc {
+    font-size: 15px;
+    color: #666; } }
+
+.h2-left-img span {
+  display: block;
+  padding: 15px 10px 0 5px; }
+
+.h2-right {
+  width: 40%;
+  padding: 25px 10px 0; }
+
+.h2-right ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.h2-right ul li image {
+  margin-top: 10px;
+  width: 100%;
+  height: 150px; }
+
+/*精选*/
+.choice {
+  width: 100%; }
+
+.choice-title {
+  width: 100%;
+  background: #fff;
+  margin: 0 0 10px 0;
+  padding: 10px 0;
+  text-align: center; }
+
+@media screen and (max-width: 321px) {
+  .choice-title text {
+    font-size: 16px;
+    color: #222; } }
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .choice-title text {
+    font-size: 17px;
+    color: #222; } }
+
+@media screen and (min-width: 400px) {
+  .choice-title text {
+    font-size: 18px;
+    color: #222; } }
+
+.choice-content {
+  padding: 0 10px 10px 10px; }
+  .choice-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .navigator-to {
+      background: #fff;
+      width: 49%;
+      margin-bottom: 7px; }
+      .choice-content ul li span {
+        display: block;
+        padding: 5px 10px 5px 15px;
+        display: flex;
+        flex-direction: column; }
+        .choice-content ul li span .proList-title {
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin-bottom: 10px;
+          font-size: 16px; }
+        .choice-content ul li span .proList-price {
+          font-size: 15px;
+          color: red; }
+        .choice-content ul li span span {
+          align-self: flex-end;
+          display: flex;
+          flex-direction: row; }
+          .choice-content ul li span span .look {
+            width: 34px;
+            height: 20px;
+            float: right;
+            margin-right: 5px; }
+
+.product-detail-img {
+  width: 100%;
+  margin-bottom: 10px; }

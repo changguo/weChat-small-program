@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="seek-container">
+	<view class="seek-main">
+		<scroll-view scroll-y="true">
+
+			<block wx:for="{{seekItem}}">
+
+				<view class="seek-main-left">
+
+					<view bindtap="seekHidden" data-index="{{index}}" class="seek-main-title {{ !item.bool  ? 'active' : ''}}">
+						<image data-index="{{index}}" src="{{item.src}}" />
+						<text data-index="{{index}}">{{item.title}}</text>
+						<text data-index="{{index}}" class="seek-left-triangle"></text>
+					</view>
+					
+					<view hidden="{{ !!item.bool }}" class="seek-main-right" scroll-y="true">
+
+						<scroll-view scroll-y="true">
+							<block wx:for="{{item.list}}" wx:for-item="itemA">
+								<text>{{itemA}}</text>
+							</block>
+						</scroll-view>
+					</view>
+					
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+
+</view>

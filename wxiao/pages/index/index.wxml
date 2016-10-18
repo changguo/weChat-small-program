@@ -1,0 +1,96 @@
+<!--index.wxml-->
+
+<view class="index-container" >
+	<scroll-view class="index-scroll" scroll-y="true" bindscrolltolower="actionTolower"  bindscrolltoupper="actionToupper" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+		<view class="index-loading" hidden="{{refreshHidden}}">
+			<button plain="true" loading="true">努力刷新中...</button>
+		</view>
+		<import src="/tpls/bannertap/bannertap.wxml"/>
+		<template is="bannertap" data="{{...banneritem}}" />
+
+<!-- 		<view class="index-swiper">
+	<swiper indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="swiperChange">
+		<block wx:for="{{indexImgUrls}}">
+			<swiper-item>
+				<image src="{{item}}" class="slide-image" mode="scaleToFill" />
+			</swiper-item>
+		</block>
+	</swiper>		
+	<ul class="index-swiper-tab" >
+		<block wx:for="{{indexImgUrls}}">
+			<li wx:if="{{index<2}}" class="{{current == index ? 'active' : ''}}" data-index="{{index}}" catchtap="swiperCurrent"></li>
+		</block>
+	</ul>
+</view> -->
+		
+		<import src="/tpls/manage/manage.wxml"/>
+		<template is="manage" data="{{...item}}" />
+<!-- 		<view class="index-main">
+	<view class="index-main-left">
+
+		<view class="index-ml-image"><image src="/images/test_ziceyongyao.png" mode="aspectFit" /></view>
+		<text>自测用药</text>
+		<p>个性化用药及健康方案</p>
+	</view>
+	<view class="index-main-right">
+		<view class="index-mr-top">
+			<ul class="index-mr-ul">
+				<li>按病找药</li>
+				<li>具体症状定点清除</li>
+			</ul>
+			<view class="index-mr-image">
+				<image src="/images/anbingzhaoyao.png" mode="aspectFit" />				
+			</view>
+		</view>
+		<view class="index-mr-bot">
+			<view>
+				<image src="/images/yongyaojilu.png" mode="aspectFit" />
+				<text>用药记录</text>
+			</view>
+			<view class="index-mrbt-even">
+				<image src="/images/chunyuyishengicon.png" mode="aspectFit" />
+				<text>快速问诊</text>
+			</view>
+		</view>
+	</view>
+</view> -->
+
+		<view class="index-list">
+			<block wx:for="{{indexList}}">
+				<block wx:if="{{index==7}}">
+					<navigator url="/pages/disease/disease">
+						<view>
+							<image src="{{item.src}}" mode="scaleToFill" />
+							<text>{{item.title}}</text>
+						</view>
+					</navigator>
+				</block>
+
+				<block wx:else>		
+					<view>
+						<image src="{{item.src}}" mode="scaleToFill" />
+						<text>{{item.title}}</text>
+					</view>
+				</block>
+
+			</block>
+
+		</view>
+
+
+		<view hidden="{{loadmoreHidden}}" class="index-loading">
+			<button plain="true" loading="true">努力加载中...</button>
+		</view>
+	</scroll-view>
+</view>
+
+
+<!-- <view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->

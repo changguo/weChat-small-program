@@ -1,0 +1,34 @@
+<view class="health-container">
+
+<import src="/tpls/bannertap/bannertap.wxml"/>
+<template is="bannertap" data="{{...banneritem}}" />
+
+<import src="/tpls/manage/manage.wxml"/>
+<template is="manage" data="{{...item}}" />
+
+	<view class="health-pack">
+		<view class="health-pack-title">
+			健康锦囊
+		</view>
+
+		<block wx:for="{{healthPack}}">
+
+			<view class="health-pack-image">
+				<image src="{{item.src}}" />
+			</view>
+			<view class="health-pack-praise">
+				<image src="{{item.praise}}" />
+				<text>{{item.praiseNumber}}</text>	
+			</view>
+			<scroll-view scroll-x="true" class="health-pack-list">
+				<block wx:for="{{item.list}}">				
+					<view>
+							<image src="{{item}}" />
+					</view>
+				</block>
+			</scroll-view>
+		</block>
+
+	</view>
+</view>
+

@@ -1,0 +1,14 @@
+
+<template name="shopbanner">
+	<!-- 轮播图 -->
+    <view class="my-swiper">
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 180px">
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="100%"/>
+            </swiper-item>
+          </block>
+        </swiper>
+    </view>
+</template>

@@ -1,0 +1,26 @@
+<view class="disease-container">
+	<scroll-view scroll-y="true">
+		<block wx:for="{{diseasItem}}">
+			<view class="disease-list">
+
+				<view class="disease-list-title">
+					<image src="{{item.src}}" />
+					<text>{{item.title}}</text>
+					<image catchtap="accordion" data-index="{{index}}" class="disease-list-title-ud" src="{{item.up}}" />
+				</view>
+
+				<view hidden="{{item.upIsDowm}}" class="disease-list-main">
+					<block wx:for="{{item.list}}" wx:for-item="itemN">
+						<view class="disease-list-image">
+							<image src="{{itemN.src}}" />
+							<text>{{itemN.title}}</text>
+						</view>
+					</block>
+				</view>
+
+			</view>
+		</block>
+	</scroll-view>
+</view>
+
+

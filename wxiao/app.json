@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/health/health",
+    "pages/shop/shop",
+    "pages/find/find",
+    "pages/user/user",
+    "pages/disease/disease",
+    "pages/seek/seek",
+	"pages/details/classification/classification",
+    "pages/details/productdetail/productdetail",
+    "pages/details/shopcar/shopcar"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#333",
+    "selectedColor": "green",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list":[   
+      {
+        "pagePath": "pages/index/index",
+        "text": "用药",
+        "iconPath": "images/tab_home.png",
+        "selectedIconPath": "images/tab_home_xuan.png"
+      },
+      {
+        "pagePath": "pages/health/health",
+        "text": "健康",
+        "iconPath": "images/tab_yangsheng.png",
+        "selectedIconPath": "images/tab_yangsheng_xuan.png"
+      },
+       {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "images/hui.png",
+        "selectedIconPath": "images/store.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/tab_xinzhi.png",
+        "selectedIconPath": "images/tab_xinzhi_xuan.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/wodew.png",
+        "selectedIconPath": "images/woded.png"
+      }
+    ]
+  }
+}

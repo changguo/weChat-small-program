@@ -1,0 +1,142 @@
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    display: flex;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    box-sizing: border-box;
+}
+.my-swiper{
+    width: 100%;
+    height: 250px;
+    background: #fff;
+}
+.slide-image{
+    margin:0 auto;
+    width: 80%;
+    height: 250px;
+    background: #fff;
+    border:0;
+}
+.detail-main{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    background: #fff;
+    padding-bottom: 18px;
+    margin-bottom:10px;
+}
+.detail-name{
+    margin-bottom:7px;
+    padding-left:10px;
+}
+.detail-name text{
+    color:#000;
+    font-size: 20px;
+
+}
+.detail-desc{
+    margin-bottom:6px;
+    padding-left:10px;
+}
+.detail-desc text{
+    color:#666;
+    font-size: 16px;
+    margin-top:20px;
+}
+.detail-price{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left:10px;
+}
+.detail-price .yuanjia{
+    color:red;
+    font-size: 17px;
+    margin-right: 10px;
+}
+.detail-price .xianjia{
+    color:#666;
+    font-size: 17px;
+    margin-right: 0px;
+    text-decoration: line-through;
+}
+ .love{
+    width: 110rpx;
+    height: 40rpx;
+    padding-left:10px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    background: #aaa;
+    align-self : flex-end;
+    margin-left: 285rpx;
+    margin-bottom:6px;
+}
+.love image{
+    width: 28rpx;
+    height: 25rpx;
+    z-index: 666;
+    padding-left: 1px;
+}
+
+.love text{
+    font-size: 16px;
+    color: #fff;
+}
+.active{
+    background: #FF6000;
+}
+.detail-provide{
+    color:#666;
+    font-size: 16px;
+    padding-left:10px;
+
+}
+.detail-details{
+    margin-top:10px;
+    padding: 10px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.detail-details text{
+    color:#666;
+    font-size: 16px;
+    padding-left:10px;
+}
+.main-details{
+    width: 100%;
+}
+.main-details image{
+    width: 100%;
+    height: 4814rpx;
+}
+.details-title{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70rpx;
+    border-bottom: 3px solid #FF6000;
+    margin-bottom: 20px;
+}
+.wrap-img{
+    width: 100%;
+}
+.details-title text{
+    text-align: center;
+    color:#FF6000;
+    font-size:18px;
+}
+
+

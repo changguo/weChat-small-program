@@ -1,0 +1,49 @@
+  <scroll-view scroll-y="true">
+  <view class="container">
+<!-- 轮播图 -->
+  <view class="my-swiper">
+         <swiper indicator-dots="{{indicatorDots}}"
+           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 250px">
+           <block wx:for="{{shopList.product.imgUrlList}}">
+             <swiper-item>
+               <image src="{{item}}" class="slide-image" width="100%"/>
+             </swiper-item>
+           </block>
+         </swiper>
+  </view>
+  <!-- 内容 -->
+   <view class="detail-main">
+      <block>
+            <view class="detail-name">
+              <text>{{shopList.product.title}}</text>
+            </view>
+            <view class="detail-desc">
+              <text>{{shopList.product.efficacy}}</text>
+            </view>
+            <view class="detail-price">
+              <text class="yuanjia">{{shopList.product.showPayPrice}}</text>
+              <text class="xianjia">{{shopList.product.showPrice}}</text>
+              <view class="love {{flag == 1 ? 'active':''}}" bindtap="bindChangeColor">
+                <image  src="/images/loveIcon.png" mode="aspectFill"></image>
+                <text>{{shopList.product.collectNum}}</text>
+              </view>
+            </view>
+            <view class="detail-provide">
+              <text>{{shopList.product.fromMsgString}}</text>
+            </view>
+             <view class="detail-details">
+              <text>{{shopList.product.share.content}}</text>
+            </view>
+        </block>
+   </view>
+   <!-- 内容详情 -->
+   <view class="main-details">
+      <view class="details-title">
+        <text>详情</text>
+      </view>
+      <view class="wrap-img">
+      <image src="{{imgDetails.url}}" mode="aspectFit"></image>
+      </view>
+   </view>
+</view>
+ </scroll-view>

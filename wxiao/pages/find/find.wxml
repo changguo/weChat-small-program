@@ -1,0 +1,32 @@
+
+ <view class="container">
+    <!-- 轮播图 -->
+    <import src="/tpls/shop-banner/shopbanner.wxml"/>
+    <template is="shopbanner" data="{{imgUrls,...shopbanner}}"></template>
+    <!-- 图标导航 -->
+    <view class="search-icon">
+      <view class="inner-icon">
+        <image src="{{findIcon}}"></image>
+         <span>
+            <text class="icon-title">疾病/症状查询</text> 
+            <text class="icon-desc">疾病症状知识大全</text>  
+         </span>
+      </view>
+    </view>
+
+    <!-- search导航 -->
+    <view class="search-nav">
+      <block wx:for="{{searchIcon}}">
+        <view>
+          <span class="wrap-box {{index%2==0  ? 'hasgap':''}} ">
+              <image  src="{{item.src}}"></image>
+              <b class="inner-span">
+                   <text class="search-title">{{item.title}}</text> 
+                   <text class="search-desc">{{item.desc}}</text>
+              </b>
+          </span>
+        </view>
+      </block>
+    </view>
+
+ </view>
