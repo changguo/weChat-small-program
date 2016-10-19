@@ -1,0 +1,32 @@
+<!-- <template name="signin">
+  <view>
+    <modal title="标题" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="actionConfirm" bindcancel="actionCancel">
+      <view class="section">
+        <label>
+          <text>用户名：</text>
+          <input placeholder="请输入用户名" value="{{username}}" bindinput="saveUsername" auto-focus />
+        </label>
+        <label>
+          <text>密码：</text>
+          <input placeholder="请输入密码" value="{{password}}" bindinput="savePassword" password="true" />
+        </label>
+      </view>
+    </modal>
+  </view>
+</template> -->
+<template name="signin">
+  <view>
+      <modal title="标题" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="actionConfirm" bindcancel="actionCancel">
+        <view class="section">
+          <label class="use">
+            <text>用户名：</text>
+            <input placeholder="请输入用户名" value="{{username}}" bindinput="saveUsername" auto-focus />
+          </label>
+          <label>
+            <text>密码：</text>
+            <input placeholder="请输入密码" value="{{password}}" bindinput="savePassword" password="true" />
+          </label>
+        </view>
+      </modal>
+    </view>
+</template>
